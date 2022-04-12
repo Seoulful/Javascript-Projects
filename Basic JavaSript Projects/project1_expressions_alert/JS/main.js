@@ -22,7 +22,7 @@ document.write(d); //prints variable d//
 
 document.write(c + e);
 
-document.write(3+3); //prints the answer to the equation//
+document.write(3 + 3); //prints the answer to the equation//
 
 var f = "green";
 
