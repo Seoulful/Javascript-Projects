@@ -16,6 +16,8 @@ function countdown() {
 }
 
 //--SLIDESHOW FUNCTION--//
+
+let n;
 let slideIndex = 1;
 showSlides(slideIndex);
 
