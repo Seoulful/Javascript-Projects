@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <script>
+            // Tells document to perform function when ready
+            $(document).ready(function() {
+                // Appends, or adds following to the specified element
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                // Applies CSS to specified id
+                $("#2").css({"color": "red"});
+                // Applies JS to specified id
+                $("#3").click(function() {
+                    $('h1').hide();
+                });
+                // Applies JS to specified id
+                $("#1").click(function() {
+                    $("#2").fadeOut();
+                });
+            })
+        </script>
+    </body>
+</html>
